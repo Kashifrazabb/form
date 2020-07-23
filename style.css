@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+
+*{margin:0;padding:0;box-sizing: border-box;user-select: none;}
+
+:root{--body-bg:crimson}
+
+body{display: flex;justify-content: center;align-items: center;height:100vh;background:#fff}
+
+input:-webkit-autofill,input:-webkit-autofill:hover, input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {box-shadow: 0 0 0 50px white inset !important;}
+
+.wrapper {
+    width:400px;border:1px solid rgb(170, 168, 169);border-radius: 20px;
+    background: rgb(255, 234, 234);box-shadow: 0 0 10px rgb(187, 187, 187);
+    padding:0px 50px 50px 50px;position: relative;}
+    
+.wrapper img {position: absolute;left:calc(50% - 60px) ;top:-50px;width:120px;
+    background:var(--body-bg);border-radius: 100%;box-shadow: 0 0 0 7pt #fff;}
+
+label{color:var(--body-bg)}
+
+.input-group-text {background: #fff;border-right:none}
+
+.form-control {border-left: none;}
+
+.heading  {margin:80px 0 20px 0;color:var(--body-bg);font-family: 'Nanum Gothic', sans-serif;}
+
+.custom-control-input:checked ~ .custom-control-label::before {background-color: var(--body-bg) !important;border-color: var(--body-bg);}
+.custom-control-input:focus ~ .custom-control-label::before {box-shadow: none;}
+.custom-control-input ~ .custom-control-label::before {border-color:var(--body-bg) !important;}
+.custom-control-input:active ~ .custom-control-label::before {background:#fff !important;}
+
+.form-control:focus {box-shadow: none;border-color: #ced4da;}
+
+.fas{color:var(--body-bg)}
+
+input[type='button']{margin-top:20px}
+
+.forget-signup,.login {display: flex;flex-direction: column;margin-top:10px}
+
+small a {color:var(--body-bg)}
+small a:hover{color:crimson;text-decoration: none;font-weight:bold}
+
+@media (max-width:405px){.wrapper{border-radius: 0;width:100%}}
+
+@media (max-width:353px){.heading{font-size:30px}}
